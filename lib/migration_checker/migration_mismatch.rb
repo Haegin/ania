@@ -1,0 +1,1 @@
+MigrationMismatch = Class.new(StandardError)
