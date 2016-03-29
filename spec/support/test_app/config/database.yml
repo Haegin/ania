@@ -1,0 +1,4 @@
+test:
+  adapter: mysql2
+  database: migration_checker_test
+  username: root

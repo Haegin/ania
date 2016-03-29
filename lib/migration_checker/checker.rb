@@ -30,10 +30,6 @@ module MigrationChecker
       migrate_to_latest
     end
 
-    def reset_column_info
-      ActiveRecord::Base.descendants.each(&:reset_column_information)
-    end
-
     def check_schemas_match(rails, sql, direction)
       if rails.first != sql.first
         File.open("rails-schema.rb", "w") { |f| f.write(rails.first) }
@@ -102,7 +98,6 @@ module MigrationChecker
 
     def dump_sql_structure
       file = Tempfile.new("migration-checker")
-      binding.pry
       mysql = ActiveRecord::Tasks::MySQLDatabaseTasks.new(Rails.configuration.database_configuration[Rails.env])
       mysql.structure_dump(file.path)
       file.rewind

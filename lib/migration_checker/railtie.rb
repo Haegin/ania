@@ -3,7 +3,7 @@ require "rails"
 module MigrationChecker
   class Railtie < Rails::Railtie
     rake_tasks do
-      require "tasks/check_migration.tasks"
+      load "tasks/check_migration.rake"
     end
   end
 end
