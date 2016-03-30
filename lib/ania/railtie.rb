@@ -1,6 +1,6 @@
 require "rails"
 
-module MigrationChecker
+module Ania
   class Railtie < Rails::Railtie
     rake_tasks do
       load "tasks/check_migration.rake"

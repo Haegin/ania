@@ -1,7 +1,7 @@
 require 'spec_helper'
 
-describe MigrationChecker do
+describe Ania do
   it 'has a version number' do
-    expect(MigrationChecker::VERSION).not_to be nil
+    expect(Ania::VERSION).not_to be nil
   end
 end

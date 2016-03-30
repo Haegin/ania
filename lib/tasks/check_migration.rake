@@ -3,10 +3,10 @@ namespace :db do
     begin
       version = ENV["VERSION"] ||
         ActiveRecord::Migrator.migrations(ActiveRecord::Migrator.migrations_paths).map(&:version).sort.last
-      if MigrationChecker::Checker.new(version).check!
+      if Ania::Checker.new(version).check!
         puts "Rails and SQL migrations match! Congratulations"
       end
-    rescue MigrationChecker::MigrationMismatch => ex
+    rescue Ania::MigrationMismatch => ex
       puts "Rails and SQL migrations produced different results"
       puts ex.message
     end

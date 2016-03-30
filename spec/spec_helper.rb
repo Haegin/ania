@@ -4,7 +4,7 @@ require "rails/all"
 require "mysql2"
 require "database_cleaner"
 
-# module MigrationChecker
+# module Ania
 #   class Application < ::Rails::Application
 #     self.config.secret_key_base = "ASecretString" if config.respond_to?(:secret_key_base)
 #   end
@@ -13,8 +13,6 @@ require "database_cleaner"
 
 ENV['RAILS_ENV'] = "test"
 require "support/test_app/config/environment"
-
-require "migration_checker"
 
 # DatabaseCleaner.strategy = :truncation
 

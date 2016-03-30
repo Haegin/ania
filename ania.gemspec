@@ -1,11 +1,11 @@
 # coding: utf-8
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require 'migration_checker/version'
+require 'ania/version'
 
 Gem::Specification.new do |spec|
-  spec.name          = "migration_checker"
-  spec.version       = MigrationChecker::VERSION
+  spec.name          = "ania"
+  spec.version       = Ania::VERSION
   spec.authors       = ["Harry Mills"]
   spec.email         = ["harry@freeagent.com"]
 

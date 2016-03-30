@@ -1,6 +1,6 @@
 require "spec_helper"
 
-describe MigrationChecker::Checker do
+describe Ania::Checker do
 
   let(:version) { "20160309103833" }
 

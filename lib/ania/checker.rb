@@ -1,6 +1,6 @@
-require "migration_checker/migration_mismatch"
+require "ania/migration_mismatch"
 
-module MigrationChecker
+module Ania
   class Checker
 
     UP = /UP/.freeze

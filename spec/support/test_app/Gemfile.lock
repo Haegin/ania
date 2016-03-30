@@ -1,7 +1,7 @@
 PATH
   remote: ~/dev/migration_checker
   specs:
-    migration_checker (0.1.0)
+    ania (0.1.0)
       rails (~> 4.2)
 
 GEM
@@ -131,7 +131,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  migration_checker!
+  ania!
   mysql2
   pry-byebug
   rails (= 4.2.6)
