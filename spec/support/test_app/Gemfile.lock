@@ -1,7 +1,8 @@
 PATH
-  remote: ~/dev/migration_checker
+  remote: ../../../
   specs:
     ania (0.1.0)
+      mysql2 (~> 0.3)
       rails (~> 4.2)
 
 GEM
