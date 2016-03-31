@@ -22,12 +22,12 @@ __END__
 CREATE TABLE `posts` (
   `id` int(11) auto_increment PRIMARY KEY,
   `author_id` int(11) NOT NULL,
-  `title` varchar(255) NOT NULL COLLATE utf8_unicode_ci,
-  `slug` varchar(32) COLLATE utf8_unicode_ci,
-  `content` text NOT NULL COLLATE utf8_unicode_ci,
+  `title` varchar(255) NOT NULL,
+  `slug` varchar(32),
+  `content` text NOT NULL,
   `created_at` datetime NOT NULL,
   `updated_at` datetime NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 ALTER TABLE `posts` ADD CONSTRAINT `author_id_fk` FOREIGN KEY (`author_id`) REFERENCES `authors` (`id`);
 
