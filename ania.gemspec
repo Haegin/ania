@@ -11,6 +11,7 @@ Gem::Specification.new do |spec|
 
   spec.summary       = %q{Removing the ache of keeping Rails and SQL migrations in sync to prevent anguish.}
   spec.homepage      = "https://github.com/fac/ania"
+  spec.license       = "Apache License, Version 2.0"
 
   # Prevent pushing this gem to RubyGems.org by setting 'allowed_push_host', or
   # delete this section to allow pushing this gem to any host.
