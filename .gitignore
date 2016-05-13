@@ -7,3 +7,6 @@
 /pkg/
 /spec/reports/
 /tmp/
+
+/rails-structure.sql
+/sql-structure.sql

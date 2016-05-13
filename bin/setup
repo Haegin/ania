@@ -5,4 +5,6 @@ set -vx
 
 bundle install
 
-# Do any other automated setup that you need to do here
+# Required for the test suite
+(cd spec/support/test_app && bundle install)
+(cd spec/support/test_app && RAILS_ENV=test bundle exec rake db:drop db:create db:schema:load)

@@ -5,15 +5,11 @@ module Ania
     end
 
     def dump
-      file = Tempfile.new("migration-checker")
-      mysql = ActiveRecord::Tasks::MySQLDatabaseTasks.new(Rails.configuration.database_configuration[Rails.env])
-      mysql.structure_dump(file.path)
-      file.rewind
-      file.readlines[0..-2].join
-    ensure
-      if file.respond_to?(:close)
-        file.close
-        file.unlink
+      Tempfile.open("migration-checker") do |file|
+        mysql = ActiveRecord::Tasks::MySQLDatabaseTasks.new(Rails.configuration.database_configuration[Rails.env])
+        mysql.structure_dump(file.path)
+        file.rewind
+        file.readlines[0..-2].join
       end
     end
   end
