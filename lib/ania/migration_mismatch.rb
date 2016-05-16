@@ -1,1 +1,3 @@
-MigrationMismatch = Class.new(StandardError)
+module Ania
+  MigrationMismatch = Class.new(StandardError)
+end
