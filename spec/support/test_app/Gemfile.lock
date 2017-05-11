@@ -1,5 +1,5 @@
 PATH
-  remote: ../../../
+  remote: ../../..
   specs:
     ania (0.1.0)
       mysql2 (~> 0.3)
@@ -64,7 +64,7 @@ GEM
     mime-types-data (3.2016.0221)
     mini_portile2 (2.0.0)
     minitest (5.8.4)
-    mysql2 (0.3.16)
+    mysql2 (0.4.6)
     nokogiri (1.6.7.2)
       mini_portile2 (~> 2.0.0.rc2)
     pry (0.10.3)
@@ -139,4 +139,4 @@ DEPENDENCIES
   rspec
 
 BUNDLED WITH
-   1.11.2
+   1.14.6
